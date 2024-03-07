@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "data-engineering-with-dbt-linkedin-learning"
+version = "0.1.0"
+description = "Study guide for Data Engineering with DBT by Mark Freeman"
+authors = ["GabrielSGoncalves <gabrielgoncalvesbr@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dbt-core = "^1.7.9"
+dbt-duckdb = "^1.7.3"
+duckdb = "^0.10.0"
+jupyterlab = "^4.1.4"
+polars = "^0.20.14"
+pandas = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
