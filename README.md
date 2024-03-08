@@ -70,5 +70,27 @@ dbt compile
 ```
 Next, `compile` can help you check if your SQL models have errors, before running it.
 
+```bash
+dbt run
+```
+And finally, `run` to compile and execute all SQL models.
 
+## Using `ref` inside models
+One easy way to reference sql models is by using the `ref` statement on your DBT queries.
+```sql
+select
+  count(1) qty
+from
+  {{ref('first_model')}}
+```
+The query above references the `first_model` as it was a CTE.
 
+## Creating documentations with DBT docs
+DBT offers a easy way to generate project documentation. After executing the command bellow, all the documentation metadata is stored as JSON files inside `/target/catalog.json`.
+```bash
+dbt docs generate
+```
+And you can access an interactive server with `docs serve` command.
+```bash
+dbt docs serve
+```
