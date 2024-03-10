@@ -1,5 +1,5 @@
-# data-engineering-with-dbt-linkedin-learning
-Course material from "Data Engineering with DBT" from Mark Freeman.
+# Data Engineering with DBT (Linkedin Learning)
+Course material from ["Data Engineering with DBT"](https://www.linkedin.com/learning/data-engineering-with-dbt/) from Mark Freeman.
 
 ## Creating development environment with Poetry
 First, make sure Poetry is installed.
@@ -94,3 +94,7 @@ And you can access an interactive server with `docs serve` command.
 ```bash
 dbt docs serve
 ```
+
+## Materialization on DBT
+Study this documentation
+- [Materializations](https://docs.getdbt.com/docs/build/materializations)
